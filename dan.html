@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Mahasiswa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <header class="header">
+    <div class="header-container">
+      <img src="rama.jpeg" alt="Profile picture" class="profile-photo" />
+      <h2>VIRDAN DHANI RAMADAN</h2> 
+    </div>
+  </header>
+
+  
+<div class="container">
+    
+  <div class="container-atas">
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showContent('biodata')">Biodata</a></li>
+        <li><a href="#" onclick="showContent('pendidikan')">Pendidikan</a></li>
+        <li><a href="#" onclick="showContent('pengalaman')">Pengalaman</a></li>
+        <li><a href="#" onclick="showContent('keahlian')">Keahlian</a></li>
+        <li><a href="#" onclick="showContent('publikasi')">Publikasi</a></li>
+      </ul>
+    </nav>
+
+    
+    <section>
+      <div id="biodata" class="content">
+        <h2>Biodata</h2>
+        <p>Nama: VIRDAN DHANI RAMADAN</p>
+        <p>Nim: 2023081062</p>
+        <p>Mahasiswa Universitas Pembangunan Jaya</p>
+        <p>Agama: Islam</p>
+        <p>Tempat lahir: Lampung Tengah</p>
+        <p>Tanggal Lahir: 15 Oktober 2005</p>
+      </div>
+
+      <div id="pendidikan" class="content" style="display:none;">
+        <h2>Pendidikan</h2>
+        <p>SD Negeri 1 Anak Tuha</p>
+        <P>MTs Pon Pes Bustanul ulum</P>
+        <p>SMk Pon Pes Darul A'mal</p>
+        <p>Universitas: Universitas Pembangunan Jaya</p>
+      </div>
+
+      <div id="pengalaman" class="content" style="display:none;">
+        <h2>Pengalaman</h2>
+        <p>Pernah Mengikuti Perlombaan Kejuaraan Daerah</p>
+        <p>Pernah mengikuti GITHUB 2024</p>
+      </div>
+
+      <div id="keahlian" class="content" style="display:none;">
+        <h2>Keahlian</h2>
+        <p>Pencak Silat</p>
+        <p>Serpis Motor</p>
+      </div>
+
+      <div id="publikasi" class="content" style="display:none;">
+        <h2>Publikasi</h2>
+        <p>Pernah melakukan Pembangunan Berkelanjutan Di SDN Rempoa</p>
+        <p>Tahun : 2024</p>
+      </div>
+    </section>
+  </div>
+
+    
+    <aside>
+      <h2>Hobi</h2>
+      <p>Main  Mobile Legen</p>
+      <p>mengaji/Sholawatan</p>
+      <p>main Sepak Bola </p>
+    </aside>
+</div>
+
+ 
+  <footer>
+    <div class="social-media">
+      <p>Instagram: @adhanirama</p>
+    </div>
+    <div class="info">
+      <p>@Mahasiswa 2023. Sistem Informasi</p>
+    </div>
+    <div class="text-right">
+      <p>Profil Mahasiswa Prodi Sistem Informasi</p>
+    </div>
+  </footer>
+
+  <script>
+    function showContent(contentId) {
+      var contents = document.querySelectorAll('.content');
+      contents.forEach(function(content) {
+        content.style.display = 'none';
+      });
+
+      var selectedContent = document.getElementById(contentId);
+      selectedContent.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
